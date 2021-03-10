@@ -83,6 +83,8 @@ public class Server {
     }
 
     public static void main(String [] args) {
+        System.out.println("AnotherFano - V1.0");
+
         Fano fano1 = FanoFactory.create(Vehicule.CAR, 46, 1);
         Fano fano2 = FanoFactory.create(Vehicule.KART, 10, 2);
         User user1 = new User("premier");
