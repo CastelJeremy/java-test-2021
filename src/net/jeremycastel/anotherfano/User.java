@@ -29,6 +29,6 @@ public class User {
         LocalTime now = LocalTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
 
-        System.out.println(fano.getNumber() + ' ' + now.format(formatter));
+        System.out.println(fano.getNumber() + " at " + now.format(formatter));
     }
 }

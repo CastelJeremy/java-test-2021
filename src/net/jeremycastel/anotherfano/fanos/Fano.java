@@ -10,10 +10,10 @@ import net.jeremycastel.anotherfano.User;
  */
 public class Fano {
     private int number;
-    private double lapTime;
+    private int lapTime;
     private ArrayList<User> subscribers;
 
-    public Fano(int number, double lapTime) throws Exception {
+    public Fano(int number, int lapTime) throws Exception {
         if (number < 1 || number > 100) {
             throw new Exception("Fano number must be between 1 and 100");
         }
@@ -27,11 +27,11 @@ public class Fano {
         return this.number;
     }
 
-    public void setLapTime(double lapTime) {
+    public void setLapTime(int lapTime) {
         this.lapTime = lapTime;
     }
 
-    public double getLapTime() {
+    public int getLapTime() {
         return this.lapTime;
     }
 

@@ -4,7 +4,7 @@ package net.jeremycastel.anotherfano.fanos;
  * Creates a fano with the specified vehicule type.
  */
 public class FanoFactory {
-    public static Fano create(Vehicule vehicule, int number, double lapTime) {
+    public static Fano create(Vehicule vehicule, int number, int lapTime) {
         try {
             switch (vehicule) {
                 case BIKE:
