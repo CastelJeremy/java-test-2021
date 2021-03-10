@@ -13,7 +13,11 @@ public class Fano {
     private double lapTime;
     private ArrayList<User> subscribers;
 
-    public Fano(int number, double lapTime) {
+    public Fano(int number, double lapTime) throws Exception {
+        if (number < 1 || number > 100) {
+            throw new Exception("Fano number must be between 1 and 100");
+        }
+
         this.number = number;
         this.lapTime = lapTime;
         this.subscribers = new ArrayList<>();

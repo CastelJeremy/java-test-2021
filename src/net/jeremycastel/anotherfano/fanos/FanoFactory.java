@@ -5,15 +5,20 @@ package net.jeremycastel.anotherfano.fanos;
  */
 public class FanoFactory {
     public static Fano create(Vehicule vehicule, int number, double lapTime) {
-        switch(vehicule) {
-            case BIKE:
-                return new Bike(number, lapTime);
-            case CAR:
-                return new Car(number, lapTime);
-            case KART:
-                return new Kart(number, lapTime);
-            default:
-                return null;
+        try {
+            switch (vehicule) {
+                case BIKE:
+                    return new Bike(number, lapTime);
+                case CAR:
+                    return new Car(number, lapTime);
+                case KART:
+                    return new Kart(number, lapTime);
+                default:
+                    return null;
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return null;
         }
     }
 }

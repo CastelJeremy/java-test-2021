@@ -1,7 +1,7 @@
 package net.jeremycastel.anotherfano.fanos;
 
 public class Bike extends Fano {
-    public Bike(int number, double lapTime) {
+    public Bike(int number, double lapTime) throws Exception {
         super(number, lapTime);
     }
 }
